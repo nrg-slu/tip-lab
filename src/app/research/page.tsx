@@ -4,6 +4,11 @@ import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import RightCircularShape from "@/components/shapes/right-circular-shape";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
+import ResearchImage1 from "../../../public/images/research-image-1.jpg";
+import ResearchImage2 from "../../../public/images/research-image-2.jpg";
+import ResearchImage3 from "../../../public/images/research-image-3.jpg";
+import ResearchImage4 from "../../../public/images/research-image-4.jpg";
+import ResearchImage5 from "../../../public/images/research-image-5.jpg";
 
 export default function Research() {
   return (
@@ -35,7 +40,7 @@ export default function Research() {
                 <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                   <div className="relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={ResearchImage1}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       width={3087}
@@ -47,7 +52,7 @@ export default function Research() {
                 <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                   <div className="relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1549896869-ca27eeffe4fb?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={ResearchImage2}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       width={3087}
@@ -57,7 +62,7 @@ export default function Research() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1628779238951-be2c9f2a59f4?q=80&w=2800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={ResearchImage3}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       width={3087}
@@ -69,7 +74,7 @@ export default function Research() {
                 <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                   <div className="relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1617085606193-6b17105cff2a?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={ResearchImage4}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       width={3087}
@@ -79,7 +84,7 @@ export default function Research() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?q=80&w=2961&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      src={ResearchImage5}
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                       width={3087}

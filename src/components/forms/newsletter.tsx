@@ -6,8 +6,7 @@ export default function Newsletter() {
           Get notified when we have news.
         </h2>
         <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-          Reprehenderit ad esse et non officia in nulla. Id proident tempor
-          incididunt nostrud nulla et culpa.
+          We promise to never spam you. You can unsubscribe at any time.
         </p>
         <form className="mx-auto mt-10 flex max-w-md gap-x-4">
           <label htmlFor="email-address" className="sr-only">

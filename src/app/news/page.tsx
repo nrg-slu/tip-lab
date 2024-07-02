@@ -1,4 +1,6 @@
 "use client";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import Header from "@/components/header";
 import Link from "next/link";
 import Image from "next/image";
@@ -6,66 +8,85 @@ import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import Newsletter from "@/components/forms/newsletter";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import NewsImage1 from "../../../public/images/news-image-1.png";
+import NewsImage2 from "../../../public/images/news-image-2.png";
+import NewsImage3 from "../../../public/images/news-image-3.png";
 
 const news = [
   {
-    title: "Hic vel totam vitae illo. Non auid explicabo",
-    href: "#",
+    title:
+      "Saint Louis University looking for pickleball players to participate in study",
     description:
-      "Illo sint voluptas. Error voluates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 16, 2023",
-    datetime: "2020-03-16",
+      "Olu Owoeye, Ph.D. (Physical Therapy and Athletic Training) was quoted on KMOV-TV Ch. 4 and KFVS-TV Ch. 12 as he calls for pickleball players to participate in a new study about injuries and health playing the sport. Click here to see more!",
+    date: "Jun 17, 2024",
+    datetime: "2024-06-17",
+    link: "https://firstalert4.com/2024/06/05/saint-louis-university-looking-pickleball-players-participate-study/",
   },
   {
-    title: "Hic vel totam vitae illo. Non aquid excabo",
-    href: "#",
+    title: "New Publication",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Mar 10, 2023",
-    datetime: "2020-03-10",
+      "This study is first to provide weight-normalized values for peak isometric hams & quads strength using a low-cost hand-held dynamometer. The normative database from this study is valuable to coaches, med team, S&Cs for injury risk mitigation and return to play decisions.",
+    date: "Jun 13, 2024",
+    datetime: "2024-06-13",
+    link: "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3743&context=ijes",
   },
   {
-    title: "Hic vel tam vitae illo. Non aliquid explicabo",
-    href: "#",
+    title: "SPIN",
     description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Feb 12, 2023",
-    datetime: "2020-02-12",
-  },
-  {
-    title: "Hic vel totam vitae. Non aliquid explicabo",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Jan 29, 2023",
-    datetime: "2020-01-29",
-  },
-  {
-    title: "Hic vel totam illo. Non aliquid explicabo",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-    date: "Jan 29, 2023",
-    datetime: "2020-01-29",
+      "Pickleball is the fastest growing sport in the United States! Do you play pickleball at least once a month? Please scan the QR code or click here on the flyer for more info and compete our survey.",
+    date: "May 29, 2024",
+    datetime: "2024-05-29",
+    link: "https://slu.az1.qualtrics.com/jfe/form/SV_5zQHR5pGVqt9jzo",
   },
 ];
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Image 1",
+    src: NewsImage1,
+    alt: "Olu Owoeye, Ph.D.",
   },
   {
-    src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Image 2",
+    src: NewsImage2,
+    alt: "SPIN",
   },
   {
-    src: "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    alt: "Image 3",
+    src: NewsImage3,
+    alt: "New Publication",
   },
 ];
 
+const headlines = [
+  {
+    text: "Pickleball Players",
+    link: "https://www.firstalert4.com/2024/06/05/saint-louis-university-looking-pickleball-players-participate-study/",
+  },
+  {
+    text: "SPIN",
+    link: "https://slu.az1.qualtrics.com/jfe/form/SV_5zQHR5pGVqt9jzo",
+  },
+  {
+    text: "New Publication",
+    link: "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3743&context=ijes",
+  },
+];
+
+const descriptions = [
+  "Saint Louis University is looking for pickleball players to study the game's injuries and health benefits. Click here to participate in the research study.",
+  "Do you play pickleball at least once a month? Please scan the QR code on the flyer for more info and compete our survey.",
+  "This study is first to provide weight-normalized values for peak isometric hams & quads strength using a low-cost hand-held dynamometer. ",
+];
+
 export default function News() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % headlines.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div>
       <Header />
@@ -106,25 +127,44 @@ export default function News() {
             <h2 className="text-base font-semibold leading-7 text-indigo-400">
               Latest News
             </h2>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Perferendis suscipit
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-500">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-              impedit perferendis suscipit eaque, iste dolor cupiditate
-              blanditiis.
-            </p>
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.5 }}
+                className="mt-2"
+              >
+                <Link
+                  href={headlines[index].link}
+                  className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                >
+                  {headlines[index].text}
+                </Link>
+              </motion.div>
+              <motion.p
+                key={`desc-${index}`}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.5 }}
+                className="mt-6 text-lg leading-8 text-gray-500"
+              >
+                {descriptions[index]}
+              </motion.p>
+            </AnimatePresence>
           </div>
         </div>
         <Newsletter />
-        <div className="pt-32 space-y-12">
+        <div className="py-32 space-y-12">
           <div className="grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
             {news.map((post) => (
               <div key={post.title}>
                 <p className="text-sm text-gray-500">
                   <time dateTime={post.datetime}>{post.date}</time>
                 </p>
-                <Link href="#" className="mt-2 block">
+                <Link href={post.link} className="mt-2 block">
                   <p className="text-xl font-semibold text-gray-900">
                     {post.title}
                   </p>

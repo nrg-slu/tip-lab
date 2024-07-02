@@ -40,6 +40,33 @@ const people = [
   },
 ];
 
+const collaborators = [
+  {
+    name: "Dr. Jane Doe",
+    department: "Department of Kinesiology",
+    institution: "University of Waterloo",
+    imageUrl:
+      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "#",
+  },
+  {
+    name: "Dr. Jane Doe",
+    department: "Department of Kinesiology",
+    institution: "University of Waterloo",
+    imageUrl:
+      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "#",
+  },
+  {
+    name: "Dr. Jane Doe",
+    department: "Department of Kinesiology",
+    institution: "University of Waterloo",
+    imageUrl:
+      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    link: "#",
+  },
+];
+
 export default function Team() {
   return (
     <div>
@@ -111,6 +138,66 @@ export default function Team() {
                 </p>
                 <p className="mt-6 text-base leading-7 text-gray-600">
                   {person.bio}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
+          Collaborators
+        </h2>
+        <ul
+          role="list"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+        >
+          {collaborators.map((person) => (
+            <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
+              <Image
+                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
+                src={person.imageUrl}
+                alt=""
+                width={800}
+                height={1000}
+              />
+              <div className="flex-auto">
+                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  {person.name}
+                </h3>
+                <p className="text-base leading-7 text-gray-600">
+                  {person.department}
+                </p>
+                <p className="text-base leading-7 text-gray-600">
+                  {person.institution}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <h2 className="text-xl text-center font-bold tracking-tight sm:text-4xl">
+          Alumnus
+        </h2>
+        <ul
+          role="list"
+          className="mx-auto my-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+        >
+          {collaborators.map((person) => (
+            <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
+              <Image
+                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
+                src={person.imageUrl}
+                alt=""
+                width={800}
+                height={1000}
+              />
+              <div className="flex-auto">
+                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  {person.name}
+                </h3>
+                <p className="text-base leading-7 text-gray-600">
+                  {person.department}
+                </p>
+                <p className="text-base leading-7 text-gray-600">
+                  {person.institution}
                 </p>
               </div>
             </li>
