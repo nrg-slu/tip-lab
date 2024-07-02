@@ -8,7 +8,7 @@ import ResearchImage1 from "../../../public/images/research-image-1.jpg";
 import ResearchImage2 from "../../../public/images/research-image-2.jpg";
 import ResearchImage3 from "../../../public/images/research-image-3.jpg";
 import ResearchImage4 from "../../../public/images/research-image-4.jpg";
-import ResearchImage5 from "../../../public/images/research-image-5.jpg";
+import ResearchImage5 from "../../../public/images/research-image-5.png";
 
 export default function Research() {
   return (
