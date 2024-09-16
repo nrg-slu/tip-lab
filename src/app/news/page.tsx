@@ -21,6 +21,11 @@ const news = [
     date: "Jun 17, 2024",
     datetime: "2024-06-17",
     link: "https://firstalert4.com/2024/06/05/saint-louis-university-looking-pickleball-players-participate-study/",
+    secondaryLinks: [
+      "https://hecmedia.org/posts/slu-researchers-study-the-surge-of-pickleball-injuries-that-are-rising-with-the-sports-popularity",
+      "https://betterpickleball.com/1519-largest-ever-pickleball-injury-study-find-out-more-and-get-involved-special-episode/",
+      "https://www.firstalert4.com/2024/06/05/saint-louis-university-looking-pickleball-players-participate-study/",
+    ],
   },
   {
     title: "New Publication",
@@ -29,6 +34,7 @@ const news = [
     date: "Jun 13, 2024",
     datetime: "2024-06-13",
     link: "https://digitalcommons.wku.edu/cgi/viewcontent.cgi?article=3743&context=ijes",
+    secondaryLinks: [],
   },
   {
     title: "SPIN",
@@ -37,6 +43,7 @@ const news = [
     date: "May 29, 2024",
     datetime: "2024-05-29",
     link: "https://slu.az1.qualtrics.com/jfe/form/SV_5zQHR5pGVqt9jzo",
+    secondaryLinks: [],
   },
 ];
 
@@ -171,6 +178,15 @@ export default function News() {
                   <p className="mt-3 text-base text-gray-500">
                     {post.description}
                   </p>
+                  <ul className="list-disc list-inside">
+                    {post.secondaryLinks.map((link, index) => (
+                      <li key={index}>
+                        <Link href={link} className="text-indigo-500">
+                          {link.length > 65 ? link.slice(0, 65) + "..." : link}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </Link>
               </div>
             ))}
