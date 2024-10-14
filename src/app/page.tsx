@@ -14,8 +14,8 @@ export default function Home() {
         <div className="mx-auto max-w-2xl py-40 sm:py-48 lg:py-48">
           <div className="mb-8 flex justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Anim aute id magna aliqua ad{" "}
-              <Link href="#" className="font-semibold text-indigo-600">
+              Saint Louis University looking for pickleball players...{" "}
+              <Link href="/news" className="font-semibold text-indigo-600">
                 Read more <span aria-hidden="true">&rarr;</span>
               </Link>
             </div>
@@ -36,10 +36,10 @@ export default function Home() {
                 Our Research
               </Link>
               <Link
-                href="/about"
+                href="/team"
                 className="text-sm font-semibold leading-6 text-gray-900"
               >
-                Learn more <span aria-hidden="true">→</span>
+                Our Team <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

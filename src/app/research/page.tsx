@@ -9,6 +9,7 @@ import ResearchImage2 from "../../../public/images/research-image-2.jpg";
 import ResearchImage3 from "../../../public/images/research-image-3.jpg";
 import ResearchImage4 from "../../../public/images/research-image-4.jpg";
 import ResearchImage5 from "../../../public/images/research-image-5.png";
+import ResearchProjectImage1 from "../../../public/images/research-project-image-1.png";
 
 export default function Research() {
   return (
@@ -129,16 +130,11 @@ export default function Research() {
                     Maiores impedit perferendis suscipit eaque, iste dolor
                     cupiditate blanditiis ratione.
                   </p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </p>
                 </div>
               </div>
               <div className="flex items-start justify-end lg:order-first">
                 <Image
-                  src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={ResearchProjectImage1}
                   alt=""
                   className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
                   width={2432}
