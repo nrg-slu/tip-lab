@@ -52,7 +52,14 @@ export default function Header({ darkMode = false }: HeaderProps) {
             </Link>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end" />
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <Link
+            href="/contact"
+            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Contact Us
+          </Link>
+        </div>
       </nav>
       <Dialog
         className="lg:hidden"
@@ -88,6 +95,12 @@ export default function Header({ darkMode = false }: HeaderProps) {
                   </Link>
                 ))}
               </div>
+              <Link
+                href="/contact"
+                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Contact Us
+              </Link>
             </div>
           </div>
         </DialogPanel>
