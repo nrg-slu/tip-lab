@@ -15,9 +15,9 @@ import NoahHeadshot from "../../../public/images/headshots/noah.png";
 import OluHeadshot from "../../../public/images/headshots/olu.png";
 import ShreyaHeadshot from "../../../public/images/headshots/shreya.png";
 import TravisHeadshot from "../../../public/images/headshots/travis.png";
+import DavieHeadshot from "../../../public/images/headshots/davie.jpg";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
-import RightCircularShape from "@/components/shapes/right-circular-shape";
 import TeamImage from "../../../public/images/team-image.png";
 import React from "react";
 
@@ -28,6 +28,13 @@ const people = [
     imageUrl: OluHeadshot,
     link: "",
     bio: "Dr. Owoeye's research focuses on the generation and implementation of knowledge that informs the prevention of sport-related injuries and consequences in youth and young adults.",
+  },
+  {
+    name: "Davie Mulenga",
+    role: "1ST Year PhD Student",
+    imageUrl: DavieHeadshot,
+    link: "",
+    bio: "Hometown: Zambia (Lusaka)\nInvolvement: Public Health Research\nFavorite Sport: Soccer\nResearch interest: Sports epidemiology , cancer rehabilitation and implementation research focusing on prevention, Rehabilitation and cancer survivorship",
   },
   {
     name: "Jack Hageman",
@@ -101,33 +108,6 @@ const people = [
   },
 ];
 
-const collaborators = [
-  {
-    name: "Dr. Jane Doe",
-    department: "Department of Kinesiology",
-    institution: "University of Waterloo",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#",
-  },
-  {
-    name: "Dr. Jane Doe",
-    department: "Department of Kinesiology",
-    institution: "University of Waterloo",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#",
-  },
-  {
-    name: "Dr. Jane Doe",
-    department: "Department of Kinesiology",
-    institution: "University of Waterloo",
-    imageUrl:
-      "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    link: "#",
-  },
-];
-
 const alumnus = [
   {
     name: "Meena Chetty",
@@ -152,6 +132,93 @@ const alumnus = [
   },
 ];
 
+const collaborators = [
+  {
+    name: "Dr. Anthony Brietbach",
+    department: "Athletic Training",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Flavio Esposito",
+    department: "Computer Science",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Katie Stamatakis",
+    department: "Epidemiology",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Katie Sniffen",
+    department: "Athletic Training",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Ross Brownson",
+    department: "Dissemination and Implementation Science",
+    institution: "Washington University in St. Louis",
+    link: "#",
+  },
+  {
+    name: "Dr. Shelina Babul",
+    department: "",
+    institution: "University of British Columbia (Canada)",
+    link: "#",
+  },
+  {
+    name: "Medrine Nyambura",
+    department: "Comunications",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Ted Yemm",
+    department: "Peak Sport and Spine",
+    institution: "St. Louis",
+    link: "#",
+  },
+  {
+    name: "Dr. Chris Sebelski",
+    department: "Physical Therapy",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Timothy Howell",
+    department: "Athletic Training",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Katherine Newsham",
+    department: "Athletic Training",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Dawn Kennedy",
+    department: "SSM Health Physical Therapy",
+    institution: "Saint Louis University",
+    link: "#",
+  },
+  {
+    name: "Dr. Wassim Mourad",
+    department: "Medical Doctor",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Pascal Edouard",
+    department: "",
+    institution: "University of St. Etienne (France)",
+    link: "",
+  },
+];
+
 export default function Team() {
   return (
     <div>
@@ -167,15 +234,9 @@ export default function Team() {
         <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
             <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-              Anim aute id magna aliqua
+              Translational Injury Prevention Lab
             </h1>
             <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p className="text-lg leading-8 text-gray-600">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua. Anim aute id magna aliqua ad ad non deserunt
-                sunt. Qui irure qui lorem cupidatat commodo.
-              </p>
               <div className="mt-10 flex justify-center">
                 <ArrowDownIcon className="h-6 w-6 animate-bounce" />
               </div>
@@ -196,10 +257,6 @@ export default function Team() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Meet our team
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo.
-          </p>
         </div>
         <ul
           role="list"
@@ -233,22 +290,15 @@ export default function Team() {
             </li>
           ))}
         </ul>
-        {/* <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
+        <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
           Collaborators
         </h2>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-4 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
           {collaborators.map((person) => (
             <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
-              <Image
-                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
-                src={person.imageUrl}
-                alt=""
-                width={800}
-                height={1000}
-              />
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                   {person.name}
@@ -262,8 +312,8 @@ export default function Team() {
               </div>
             </li>
           ))}
-        </ul> */}
-        <h2 className="text-xl text-center font-bold tracking-tight sm:text-4xl">
+        </ul>
+        <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
           Alumnus
         </h2>
         <ul

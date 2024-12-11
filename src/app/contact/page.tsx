@@ -1,8 +1,65 @@
+"use client";
+
 import Header from "@/components/header";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import RightCircularShape from "@/components/shapes/right-circular-shape";
+import Link from "next/link";
+import { useState } from "react";
+import {
+  FaXTwitter,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa6";
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      setSubmitStatus({
+        type: "success",
+        message: "Message sent successfully! We will get back to you soon.",
+      });
+      (e.target as HTMLFormElement).reset();
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again later.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <Header />
@@ -14,7 +71,18 @@ export default function Contact() {
           Contact Us
         </h1>
         <div className="max-w-2xl mx-auto">
-          <form className="space-y-8">
+          {submitStatus.type && (
+            <div
+              className={`mb-4 p-4 rounded-md ${
+                submitStatus.type === "success"
+                  ? "bg-green-50 text-green-700"
+                  : "bg-red-50 text-red-700"
+              }`}
+            >
+              {submitStatus.message}
+            </div>
+          )}
+          <form className="space-y-8" onSubmit={handleSubmit}>
             <div className="space-y-6">
               <div>
                 <label
@@ -27,6 +95,7 @@ export default function Contact() {
                   type="text"
                   name="name"
                   id="name"
+                  required
                   className="mt-1 block w-full px-3.5 py-2.5 rounded-md ring-1 ring-gray-300 ring-inset shadow-sm focus:ring-indigo-500 sm:text-sm"
                   placeholder="Your name"
                 />
@@ -43,6 +112,7 @@ export default function Contact() {
                   type="email"
                   name="email"
                   id="email"
+                  required
                   className="mt-1 block w-full px-3.5 py-2.5 rounded-md ring-1 ring-gray-300 ring-inset shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   placeholder="you@example.com"
                 />
@@ -59,6 +129,7 @@ export default function Contact() {
                   type="text"
                   name="subject"
                   id="subject"
+                  required
                   className="mt-1 block w-full px-3.5 py-2.5 rounded-md ring-1 ring-gray-300 ring-inset shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   placeholder="Subject of your message"
                 />
@@ -75,6 +146,7 @@ export default function Contact() {
                   id="message"
                   name="message"
                   rows={5}
+                  required
                   className="mt-1 block w-full px-3.5 py-2.5 rounded-md ring-1 ring-gray-300 ring-inset shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                   placeholder="Your message"
                 />
@@ -83,9 +155,10 @@ export default function Contact() {
               <div>
                 <button
                   type="submit"
-                  className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  disabled={isSubmitting}
+                  className="w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Send message
+                  {isSubmitting ? "Sending..." : "Send message"}
                 </button>
               </div>
             </div>
@@ -112,6 +185,29 @@ export default function Contact() {
                 Email Us
               </h2>
               <p className="mt-4 text-gray-600">tiplab@slu.edu</p>
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+                Our Socials
+              </h2>
+              <div className="mt-4 flex space-x-6">
+                <Link
+                  href="https://x.com/tiplab_slu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  <FaXTwitter className="h-6 w-6" />
+                </Link>
+                <Link
+                  href="https://www.instagram.com/tiplab_slu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-gray-900"
+                >
+                  <FaInstagram className="h-6 w-6" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>

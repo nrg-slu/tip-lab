@@ -37,7 +37,8 @@ export default function Home() {
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-100">
                 Based out of SLU, the TIP Lab is committed to reducing the risk
-                of sport-related injuries and associated consequences.
+                of injuries in athletes, optimizing musculoskeletal health in
+                the general population and advancing knowledge translation.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link
