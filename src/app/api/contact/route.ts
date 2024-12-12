@@ -16,8 +16,8 @@ export async function POST(request: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: "TIP Lab <onboarding@slu-tip-lab.com>",
-      to: "irakoze.andy@gmail.com",
+      from: "TIP Lab <contact@slu-tip-lab.com>",
+      to: "tip.lab@health.slu.edu",
       replyTo: email,
       subject: `Contact Form: ${subject}`,
       html: `
