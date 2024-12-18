@@ -36,9 +36,12 @@ export default function Home() {
                 Translational Injury Prevention Lab
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-100">
-                Based out of SLU, the TIP Lab is committed to reducing the risk
-                of injuries in athletes, optimizing musculoskeletal health in
-                the general population and advancing knowledge translation.
+                Based out of Saint Louis University, the TIP Lab is committed to
+                advancing sports and exercise injury prevention and
+                musculoskeletal health through high quality knowledge
+                translation research and practical solutions that enhance the
+                safety and wellbeing of athletes and active individuals
+                worldwide.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link

@@ -24,10 +24,17 @@ import React from "react";
 const people = [
   {
     name: "Olu Owoeye, Ph.D.",
-    role: "Director of the Translational Sports Injury Prevention (TIP) Lab",
+    role: "Director of the Translational Injury Prevention Lab and Assistant Professor at the Department of Physical Therapy and Athletic Training, Saint Louis University",
     imageUrl: OluHeadshot,
     link: "",
-    bio: "Dr. Owoeye's research focuses on the generation and implementation of knowledge that informs the prevention of sport-related injuries and consequences in youth and young adults.",
+    bio: "Dr. Owoeye's research focuses on the generation and implementation of knowledge that informs the prevention of sport- and exercise-related injuries and consequences in youth and young adults.",
+  },
+  {
+    name: "Nick Kolesky",
+    role: "3rd year PhD student",
+    imageUrl: NickHeadshot,
+    link: "",
+    bio: "Hometown: Anchorage, AK\nInvolvement: Public health research\nFavorite sports: soccer, cross country\nResearch Interests: socioeconomic factors underlying obesity, injury prevention",
   },
   {
     name: "Davie Mulenga",
@@ -56,13 +63,6 @@ const people = [
     imageUrl: NataniaHeadshot,
     link: "",
     bio: "Hometown: Houston, TX\nInvolvement: N/A\nFavorite sports: Figure skating, ballet\nResearch Interests: Neurodevelopmental pediatrics, play therapy",
-  },
-  {
-    name: "Nick Kolesky",
-    role: "3rd year PhD student",
-    imageUrl: NickHeadshot,
-    link: "",
-    bio: "Hometown: Anchorage, AK\nInvolvement: Public health research\nFavorite sports: soccer, cross country\nResearch Interests: socioeconomic factors underlying obesity, injury prevention",
   },
   {
     name: "Noah Vermette",
