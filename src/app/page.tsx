@@ -25,8 +25,11 @@ export default function Home() {
           <div className="mx-auto max-w-2xl py-40 sm:py-48 lg:py-48">
             <div className="mb-8 flex justify-center">
               <div className="relative rounded-full px-3 py-1 text-xs text-white ring-1 ring-white">
-                SLU looking for pickleball players...{" "}
-                <Link href="/news" className="font-semibold text-indigo-600">
+                New Publications!{" "}
+                <Link
+                  href="/publications"
+                  className="font-semibold text-indigo-600"
+                >
                   Read more <span aria-hidden="true">&rarr;</span>
                 </Link>
               </div>

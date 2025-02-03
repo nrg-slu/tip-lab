@@ -10,6 +10,16 @@ const publications = [
     publications: [
       {
         description:
+          "Kirsten N. Bott, PhD, Michael T. Kuczynski, PhD, Oluwatoyosi B. A. Owoeye, PhD, PT, Jacob L. Jaremko, MD, PhD, Koren E. Roach, PhD, Jean-Michel Galarneau, PhD, Carolyn A. Emery, PhD, PT, and Sarah L. Manske, PhD. Subchondral Bone Degeneration and Pathology 3-15 Years Following Ankle Sprain Injury in Adolescent Sport",
+        link: "https://journals.sagepub.com/doi/full/10.1177/10711007241288857",
+      },
+      {
+        description:
+          "Pascal Edouard, Davie Mulenga, Pierre-Eddy Dandrieux, Florence Salati, Jessica Wallace, Oluwatoyosi Owoeye. Coverage from medical teams and injury/illness epidemiology within youth athletics in Africa: A prospective study during the 2023 African Youth Under 18/20 Athletics Championships",
+        link: "https://www.sciencedirect.com/science/article/pii/S144024402400255X",
+      },
+      {
+        description:
           "Owoeye OBA, Mulenga D, Kim J, Breitbach A, Neme J. Normative Hamstrings and Quadriceps Isometric Strength Values in Healthy Soccer and Basketball Student-Athlete. International Journal of Exercise Science. 17 (4), 768 - 778",
         link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fl30wJgAAAAJ&sortby=pubdate&citation_for_view=fl30wJgAAAAJ:nb7KW1ujOQ8C",
       },

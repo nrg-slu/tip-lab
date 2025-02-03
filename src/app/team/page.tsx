@@ -18,7 +18,7 @@ import TravisHeadshot from "../../../public/images/headshots/travis.png";
 import DavieHeadshot from "../../../public/images/headshots/davie.jpg";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
-import TeamImage from "../../../public/images/team-image.png";
+import TeamImage from "../../../public/images/team-image.jpeg";
 import React from "react";
 
 const people = [
