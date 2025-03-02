@@ -31,14 +31,14 @@ const people = [
   },
   {
     name: "Nick Kolesky",
-    role: "3rd year PhD student",
+    role: "4th year PhD student",
     imageUrl: NickHeadshot,
     link: "",
     bio: "Hometown: Anchorage, AK\nInvolvement: Public health research\nFavorite sports: soccer, cross country\nResearch Interests: socioeconomic factors underlying obesity, injury prevention",
   },
   {
     name: "Davie Mulenga",
-    role: "1ST Year PhD Student",
+    role: "2nd year PhD student",
     imageUrl: DavieHeadshot,
     link: "",
     bio: "Hometown: Zambia (Lusaka)\nInvolvement: Public Health Research\nFavorite Sport: Soccer\nResearch interest: Sports epidemiology , cancer rehabilitation and implementation research focusing on prevention, Rehabilitation and cancer survivorship",
@@ -108,24 +108,24 @@ const people = [
   },
 ];
 
-const alumnus = [
+const alumni = [
   {
     name: "Meena Chetty",
-    role: "Alumnus",
+    role: "Alumni",
     imageUrl: MeenaHeadshot,
     link: "",
     bio: "Hometown: Suwanee, Georgia\nInvolvement: Omkara Dance Team\nFavorite sports: Dance\nResearch Interests: Injury prevention, women's health, neuro",
   },
   {
     name: "Jemma Kim",
-    role: "Alumnus",
+    role: "Alumni",
     imageUrl: JemmaHeadshot,
     link: "",
     bio: "Hometown: Lake Zurich, IL\nInvolvement: PTSA, PT Ambassador, SLU HRC Clinic, APTA Moves Me Ambassador, Student Success Center Tutor Lead, neurodegenerative disease research\nFavorite sports: Formula 1, cross country and track and field\nResearch Interests: Injury prevention, Parkinson's Disease, Alzheimer's Disease, rehabilitation sciences",
   },
   {
     name: "Travis Turner",
-    role: "Alumnus",
+    role: "Alumni",
     imageUrl: TravisHeadshot,
     link: "",
     bio: "Hometown: Rochester, MN\nInvolvement: SLU SOM Admissions Committee\nFavorite sports: baseball, basketball, running\nResearch Interests: orthopedic surgery research, injury prevention",
@@ -207,7 +207,7 @@ const collaborators = [
   },
   {
     name: "Dr. Wassim Mourad",
-    department: "Medical Doctor",
+    department: "Orthopaedic Surgery",
     institution: "Saint Louis University",
     link: "",
   },
@@ -217,8 +217,60 @@ const collaborators = [
     institution: "University of St. Etienne (France)",
     link: "",
   },
+  {
+    name: "Dr. Ryan Blechle",
+    department: "SSM Health Physical Therapy",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Jamil Neme",
+    department: "Sports Medicine",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Eric Bellm",
+    department: "Physical Therapy",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Ryan Blechle",
+    department: "SSM Health Physical Therapy",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Katherine Newsham",
+    department: "Athletic Training",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Katie Stamatakis",
+    department: "Epidemiology/Public Health",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Madeline Stenersen",
+    department: "Psychology",
+    institution: "Saint Louis University",
+    link: "",
+  },
 ];
 
+const partners = [
+  {
+    name: "Callahan Pickleball Academy",
+    link: "https://callahanpickleball.com/",
+  },
+  {
+    name: "Peak Sport and Spine",
+    link: "https://peaksportspine.com/locations/crestwood/?utm_source=GBP",
+  },
+];
 export default function Team() {
   return (
     <div>
@@ -314,31 +366,38 @@ export default function Team() {
           ))}
         </ul>
         <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
-          Alumnus
+          Alumni
         </h2>
         <ul
           role="list"
           className="mx-auto my-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
         >
-          {alumnus.map((person) => (
+          {alumni.map((person) => (
             <li key={person.name} className="flex flex-col gap-6 xl:flex-row">
-              <Image
-                className="aspect-[4/5] w-52 flex-none rounded-2xl object-cover"
-                src={person.imageUrl}
-                alt=""
-                width={800}
-                height={1000}
-              />
               <div className="flex-auto">
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                   {person.name}
                 </h3>
-                <p className="text-base leading-7 text-gray-600">
-                  {person.role}
-                </p>
-                <p className="text-base leading-7 text-gray-600">
-                  {person.bio}
-                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <h2 className="mt-20 text-xl text-center font-bold tracking-tight sm:text-4xl">
+          Partners
+        </h2>
+        <ul
+          role="list"
+          className="mx-auto my-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none"
+        >
+          {partners.map((partner) => (
+            <li key={partner.name} className="flex flex-col gap-6 xl:flex-row">
+              <div className="flex-auto">
+                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  {partner.name}
+                </h3>
+                <Link href={partner.link} className="text-indigo-600">
+                  {partner.link}
+                </Link>
               </div>
             </li>
           ))}

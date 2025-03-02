@@ -28,10 +28,11 @@ export default function Home() {
                 New Publications!{" "}
                 <Link
                   href="/publications"
-                  className="font-semibold text-indigo-600"
+                  className="font-bold text-white underline hover:text-indigo-600"
                 >
-                  Read more <span aria-hidden="true">&rarr;</span>
-                </Link>
+                  Read more
+                </Link>{" "}
+                <span aria-hidden="true">&rarr;</span>
               </div>
             </div>
             <div className="text-center">

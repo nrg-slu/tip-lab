@@ -170,27 +170,44 @@ export default function Research() {
                   <p className="mt-6 text-lg leading-8 text-gray-600">
                     Pickleball is the fastest growing sport in the United
                     States, but there remains limited data to inform injury
-                    prevention among players! The SPIN Project is a series of
-                    studies that aims to fill the limited data gap. It will
+                    prevention among players! The Surveillance in Pickleball
+                    players to reduce INjury burden (SPIN) Project is a series
+                    of studies that aims to fill the limited data gap. It will
                     provide a more accurate account of injury burden and risk
                     factors and establish pragmatic injury prevention strategies
                     across levels of play.
                   </p>
-                  <div className="mt-6 text-lg leading-8 text-gray-600">
-                    <span>
-                      You are eligible to participate in the current SPIN survey
-                      if you are ≥18 years and play pickleball at least once a
-                      month? Please learn more and complete the anonymous survey
-                      here:
-                    </span>{" "}
-                    <Link href=" https://slu.az1.qualtrics.com/jfe/form/SV_5zQHR5pGVqt9jzo">
-                      https://slu.az1.qualtrics.com/jfe/form/SV_5zQHR5pGVqt9jzo
-                    </Link>
-                  </div>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Or scan the QR code on the flyer for more information and to
-                    complete the survey.
+                  <p className="mt-6 text-lg text-gray-600">Phase 1</p>
+                  <p className="mt-3 text-lg leading-8 text-gray-600">
+                    Completed! Study findings currently under review in
+                    peer-reviewed journals. Watch this space for infographics of
+                    summary of findings.
                   </p>
+                  <p className="mt-6 text-lg text-gray-600">Phase 2</p>
+                  <p className="mt-3 text-lg leading-8 text-gray-600">
+                    The Development and Evaluation of a Pickleball-Specific
+                    Warm-Up and Recovery Routine to Reduce Injuries among
+                    Players. This study phase is a follow-up to the SPIN
+                    National Survey (Phase 1). The purpose of this study is to
+                    evaluate the effectiveness of the PickleSet Program, a new
+                    injury prevention/recovery program in pickleball players
+                    over several weeks. In this phase, we will compare injury
+                    and pain trends before and after the introduction of the
+                    evidence-informed PickleSet interventions that we have
+                    developed for pickleball players.
+                  </p>
+                  <div className="mt-6 text-lg leading-8 text-gray-600">
+                    You are eligible to participate in the SPIN Phase 2 if you
+                    are ≥18 years and play pickleball at least once a week?
+                    Please contact us at{" "}
+                    <Link
+                      href="mailto:spin@slu.edu"
+                      className="text-indigo-600"
+                    >
+                      spin@slu.edu
+                    </Link>{" "}
+                    if you wish to participate in this study.
+                  </div>
                 </div>
               </div>
               <div className="flex items-start justify-start order-1 lg:order-last">
