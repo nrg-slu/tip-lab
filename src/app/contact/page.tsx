@@ -184,7 +184,7 @@ export default function Contact() {
               <h2 className="text-2xl font-bold tracking-tight text-gray-900">
                 Email Us
               </h2>
-              <p className="mt-4 text-gray-600">tiplab@slu.edu</p>
+              <p className="mt-4 text-gray-600">tip.lab@health.slu.edu</p>
             </div>
             <div>
               <h2 className="text-2xl font-bold tracking-tight text-gray-900">

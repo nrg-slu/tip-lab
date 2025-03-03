@@ -201,10 +201,10 @@ export default function Research() {
                     are ≥18 years and play pickleball at least once a week?
                     Please contact us at{" "}
                     <Link
-                      href="mailto:spin@slu.edu"
+                      href="mailto:tip.lab@health.slu.edu"
                       className="text-indigo-600"
                     >
-                      spin@slu.edu
+                      tip.lab@health.slu.edu
                     </Link>{" "}
                     if you wish to participate in this study.
                   </div>
