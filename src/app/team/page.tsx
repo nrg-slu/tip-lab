@@ -16,6 +16,8 @@ import OluHeadshot from "../../../public/images/headshots/olu.png";
 import ShreyaHeadshot from "../../../public/images/headshots/shreya.png";
 import TravisHeadshot from "../../../public/images/headshots/travis.png";
 import DavieHeadshot from "../../../public/images/headshots/davie.jpg";
+import Callahan from "../../../public/images/callahan.jpg";
+import Peak from "../../../public/images/peak.jpg";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import TeamImage from "../../../public/images/team-image.jpeg";
@@ -265,10 +267,12 @@ const partners = [
   {
     name: "Callahan Pickleball Academy",
     link: "https://callahanpickleball.com/",
+    image: Callahan,
   },
   {
     name: "Peak Sport and Spine",
     link: "https://peaksportspine.com/locations/crestwood/?utm_source=GBP",
+    image: Peak,
   },
 ];
 export default function Team() {
@@ -391,7 +395,8 @@ export default function Team() {
         >
           {partners.map((partner) => (
             <li key={partner.name} className="flex flex-col gap-6 xl:flex-row">
-              <div className="flex-auto">
+              <div className="flex-auto space-y-6">
+                <Image src={partner.image} alt="" width={100} height={100} />
                 <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
                   {partner.name}
                 </h3>

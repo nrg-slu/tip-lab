@@ -6,8 +6,23 @@ import Link from "next/link";
 
 const publications = [
   {
+    year: "2025",
+    publications: [
+      {
+        description:
+          "Owoeye, Oluwatoyosi B.A. PhD, MS, PT; Black, Amanda M. PhD, ATC; Brownson, Ross C. PhD. Using Dissemination and Implementation Science to Optimize Knowledge Translation in Sports Medicine and Related Fields: A Focus on Hybrid Research Approaches",
+        link: "https://journals.lww.com/cjsportsmed/fulltext/9900/using_dissemination_and_implementation_science_to.300.aspx",
+      },
+    ],
+  },
+  {
     year: "2024",
     publications: [
+      {
+        description:
+          "Owoeye, Oluwatoyosi B. A. PhD, MS, PT; Breitbach, Anthony PhD, ATC; Esposito, Flavio PhD; Nguyen, Natania DPT (c); Bender, Amy M. PhD; Neme, Jamil R. MD Snooze it or Lose it: Understanding Sleep Disturbance and Injuries in Soccer and Basketball Student-Athletes",
+        link: "https://journals.lww.com/cjsportsmed/abstract/2024/11000/snooze_it_or_lose_it__understanding_sleep.15.aspx",
+      },
       {
         description:
           "Kirsten N. Bott, PhD, Michael T. Kuczynski, PhD, Oluwatoyosi B. A. Owoeye, PhD, PT, Jacob L. Jaremko, MD, PhD, Koren E. Roach, PhD, Jean-Michel Galarneau, PhD, Carolyn A. Emery, PhD, PT, and Sarah L. Manske, PhD. Subchondral Bone Degeneration and Pathology 3-15 Years Following Ankle Sprain Injury in Adolescent Sport",
