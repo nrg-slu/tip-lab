@@ -20,7 +20,7 @@ import Callahan from "../../../public/images/callahan.jpg";
 import Peak from "../../../public/images/peak.jpg";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
-import TeamImage from "../../../public/images/team-image.jpeg";
+import TeamImage from "../../../public/images/team-image-2.jpg";
 import React from "react";
 
 const people = [

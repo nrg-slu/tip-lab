@@ -170,7 +170,7 @@ export default function Contact() {
                 Visit Us
               </h2>
               <p className="mt-4 text-gray-600">
-                Translational Sports Injury Prevention Lab
+                Translational Injury Prevention Lab
                 <br />
                 Saint Louis University
                 <br />

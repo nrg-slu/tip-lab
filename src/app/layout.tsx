@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 
 export const metadata: Metadata = {
   title: "TIP Lab",
-  description: "Translational Sports Injury Prevention Lab",
+  description: "Translational Injury Prevention Lab",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",

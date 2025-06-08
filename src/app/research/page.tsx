@@ -12,6 +12,7 @@ import ResearchImage5 from "../../../public/images/research-image-5.png";
 import ResearchProjectImage1 from "../../../public/images/research-project-image-1.png";
 import ResearchProjectImage2 from "../../../public/images/research-project-image-2.jpg";
 import ResearchProjectImage4 from "../../../public/images/research-project-image-4.png";
+import PickleballProjectImage1 from "../../../public/images/pickleball-project-image-1.jpg";
 import Link from "next/link";
 
 export default function Research() {
@@ -28,14 +29,9 @@ export default function Research() {
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  We&apos;re reducing the risk of sport-related injuries
+                  We&apos;re reducing the risk of sport-related injuries and
+                  promoting health
                 </h1>
-                {/* <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                  Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                  quis cupidatat mollit aute velit. Et labore commodo nulla
-                  aliqua proident mollit ullamco exercitation tempor. Sint
-                  aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
-                </p> */}
                 <div className="mt-10 flex justify-center">
                   <ArrowDownIcon className="h-6 w-6 animate-bounce" />
                 </div>
@@ -109,8 +105,75 @@ export default function Research() {
             </h2>
           </div>
           <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="lg:ml-auto lg:pl-4 lg:pt-4 order-2 lg:order-2">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="lg:pl-4 lg:pt-4 order-2 lg:order-2">
+                <div className="lg:max-w-lg">
+                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    Pickleball Project
+                  </p>
+                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                    Pickleball is the fastest growing sport in the United
+                    States, but there remains limited data to inform injury
+                    prevention among players! The Surveillance in Pickleball
+                    players to reduce INjury burden (Pickleball) Project is a
+                    series of studies that aims to fill the limited data gap. It
+                    will provide a more accurate account of injury burden and
+                    risk factors and establish pragmatic injury prevention
+                    strategies across levels of play.
+                  </p>
+                  <p className="mt-6 text-lg text-gray-600">Phase 1</p>
+                  <p className="mt-3 text-lg leading-8 text-gray-600">
+                    Completed! Study findings are currently under review in
+                    peer-reviewed journals.
+                  </p>
+                  <Image
+                    src={PickleballProjectImage1}
+                    alt=""
+                    className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 aspect-3/4"
+                    width={180}
+                    height={240}
+                  />
+                  <p className="mt-6 text-lg text-gray-600">Phase 2</p>
+                  <p className="mt-3 text-lg leading-8 text-gray-600">
+                    The Development and Evaluation of a Pickleball-Specific
+                    Warm-Up and Recovery Routine to Reduce Injuries among
+                    Players. This study phase is a follow-up to the Pickleball
+                    National Survey (Phase 1). The purpose of this study is to
+                    evaluate the effectiveness of the PickleSet Program, a new
+                    injury prevention/recovery program in pickleball players
+                    over several weeks. In this phase, we will compare injury
+                    and pain trends before and after the introduction of the
+                    evidence-informed PickleSet interventions that we have
+                    developed for pickleball players.
+                  </p>
+                  <div className="mt-6 text-lg leading-8 text-gray-600">
+                    You are eligible to participate in the Pickleball Phase 2 if
+                    you are ≥18 years and play pickleball at least once a week?
+                    Please contact us at{" "}
+                    <Link
+                      href="mailto:tip.lab@health.slu.edu"
+                      className="text-indigo-600"
+                    >
+                      tip.lab@health.slu.edu
+                    </Link>{" "}
+                    if you wish to participate in this study.
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-start justify-start order-1 lg:order-last">
+                <Image
+                  src={ResearchProjectImage2}
+                  alt=""
+                  className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                  width={2432}
+                  height={1442}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="lg:pl-4 lg:pt-4 order-2 lg:order-2">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     MAP for Coaches
@@ -161,69 +224,8 @@ export default function Research() {
             </div>
           </div>
           <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="lg:ml-auto lg:pl-4 lg:pt-4 order-2 lg:order-2">
-                <div className="lg:max-w-lg">
-                  <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    SPIN Project
-                  </p>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
-                    Pickleball is the fastest growing sport in the United
-                    States, but there remains limited data to inform injury
-                    prevention among players! The Surveillance in Pickleball
-                    players to reduce INjury burden (SPIN) Project is a series
-                    of studies that aims to fill the limited data gap. It will
-                    provide a more accurate account of injury burden and risk
-                    factors and establish pragmatic injury prevention strategies
-                    across levels of play.
-                  </p>
-                  <p className="mt-6 text-lg text-gray-600">Phase 1</p>
-                  <p className="mt-3 text-lg leading-8 text-gray-600">
-                    Completed! Study findings currently under review in
-                    peer-reviewed journals. Watch this space for infographics of
-                    summary of findings.
-                  </p>
-                  <p className="mt-6 text-lg text-gray-600">Phase 2</p>
-                  <p className="mt-3 text-lg leading-8 text-gray-600">
-                    The Development and Evaluation of a Pickleball-Specific
-                    Warm-Up and Recovery Routine to Reduce Injuries among
-                    Players. This study phase is a follow-up to the SPIN
-                    National Survey (Phase 1). The purpose of this study is to
-                    evaluate the effectiveness of the PickleSet Program, a new
-                    injury prevention/recovery program in pickleball players
-                    over several weeks. In this phase, we will compare injury
-                    and pain trends before and after the introduction of the
-                    evidence-informed PickleSet interventions that we have
-                    developed for pickleball players.
-                  </p>
-                  <div className="mt-6 text-lg leading-8 text-gray-600">
-                    You are eligible to participate in the SPIN Phase 2 if you
-                    are ≥18 years and play pickleball at least once a week?
-                    Please contact us at{" "}
-                    <Link
-                      href="mailto:tip.lab@health.slu.edu"
-                      className="text-indigo-600"
-                    >
-                      tip.lab@health.slu.edu
-                    </Link>{" "}
-                    if you wish to participate in this study.
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-start justify-start order-1 lg:order-last">
-                <Image
-                  src={ResearchProjectImage2}
-                  alt=""
-                  className="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-                  width={2432}
-                  height={1442}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="lg:ml-auto lg:pl-4 lg:pt-4 order-2 lg:order-2">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="lg:pl-4 lg:pt-4 order-2 lg:order-2">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     NEISS Project
@@ -257,8 +259,8 @@ export default function Research() {
             </div>
           </div>
           <div className="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32">
-            <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-              <div className="lg:ml-auto lg:pl-4 lg:pt-4 order-2 lg:order-2">
+            <div className="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+              <div className="lg:pl-4 lg:pt-4 order-2 lg:order-2">
                 <div className="lg:max-w-lg">
                   <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                     RICHLoad
