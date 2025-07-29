@@ -12,7 +12,6 @@ import ResearchImage5 from "../../../public/images/research-image-5.png";
 import ResearchProjectImage1 from "../../../public/images/research-project-image-1.png";
 import ResearchProjectImage2 from "../../../public/images/research-project-image-2.jpg";
 import ResearchProjectImage4 from "../../../public/images/research-project-image-4.png";
-import PickleballProjectImage1 from "../../../public/images/pickleball-project-image-1.jpg";
 import Link from "next/link";
 
 export default function Research() {
@@ -126,13 +125,15 @@ export default function Research() {
                     Completed! Study findings are currently under review in
                     peer-reviewed journals.
                   </p>
-                  <Image
-                    src={PickleballProjectImage1}
-                    alt=""
-                    className="w-full rounded-xl shadow-xl ring-1 ring-gray-400/10 aspect-3/4"
-                    width={180}
-                    height={240}
-                  />
+                  <div className="relative w-full min-h-fit aspect-[3/4] rounded-xl shadow-xl ring-1 ring-gray-400/10">
+                    <Image
+                      src="/images/pickleball-project-image-1.jpg"
+                      alt="Pickleball Project"
+                      fill
+                      priority
+                      className="rounded-xl"
+                    />
+                  </div>
                   <p className="mt-6 text-lg text-gray-600">Phase 2</p>
                   <p className="mt-3 text-lg leading-8 text-gray-600">
                     The Development and Evaluation of a Pickleball-Specific
@@ -149,14 +150,14 @@ export default function Research() {
                   <div className="mt-6 text-lg leading-8 text-gray-600">
                     You are eligible to participate in the Pickleball Phase 2 if
                     you are ≥18 years and play pickleball at least once a week?
-                    Please contact us at{" "}
+                    Follow this{" "}
                     <Link
-                      href="mailto:tip.lab@health.slu.edu"
+                      href="https://slu.az1.qualtrics.com/jfe/form/SV_9nnYAD1s54Erf7w"
                       className="text-indigo-600"
                     >
-                      tip.lab@health.slu.edu
+                      link
                     </Link>{" "}
-                    if you wish to participate in this study.
+                    to participate in the study.
                   </div>
                 </div>
               </div>
