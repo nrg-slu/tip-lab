@@ -13,6 +13,11 @@ const publications = [
           "Owoeye, Oluwatoyosi B.A. PhD, MS, PT; Black, Amanda M. PhD, ATC; Brownson, Ross C. PhD. Using Dissemination and Implementation Science to Optimize Knowledge Translation in Sports Medicine and Related Fields: A Focus on Hybrid Research Approaches",
         link: "https://journals.lww.com/cjsportsmed/fulltext/9900/using_dissemination_and_implementation_science_to.300.aspx",
       },
+      {
+        description:
+          "Bullock GS, Räisänen AM, Martin C, Martin M, Galarneau JM, Whittaker JL, Losciale JM, Bizzini M, Bourne MN, Dijkstra HP, Dubé MO, Hayden A, Girdwood M, Hägglund M, McLeod S, Mkumbuzi NS, Mosler AB, Murphy MC, Myklebust G, Møller M, Ocarino JM, Owoeye OBA, Palmer D, Pasanen K, Rio EK, Thorborg K, van Middelkoop M, Verhagen E, Warden SJ, Whalan M, Crossley KM, Emery C. Prevention strategies for lower extremity injury: a systematic review and meta-analyses for the Female, Woman and Girl Athlete Injury Prevention (FAIR) Consensus. Br J Sports Med. 2025 Jul 11:bjsports-2025-109910. doi: 10.1136/bjsports-2025-109910.",
+        link: "https://pubmed.ncbi.nlm.nih.gov/40645751/",
+      },
     ],
   },
   {

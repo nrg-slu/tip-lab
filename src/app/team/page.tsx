@@ -26,7 +26,7 @@ import React from "react";
 const people = [
   {
     name: "Olu Owoeye, Ph.D.",
-    role: "Director of the Translational Injury Prevention Lab and Assistant Professor at the Department of Physical Therapy and Athletic Training, Saint Louis University",
+    role: "Director of the Translational Injury Prevention Lab and Associate Professor at the Department of Physical Therapy and Athletic Training, Saint Louis University",
     imageUrl: OluHeadshot,
     link: "",
     bio: "Dr. Owoeye's research focuses on the generation and implementation of knowledge that informs the prevention of sport- and exercise-related injuries and consequences in youth and young adults.",
@@ -250,14 +250,20 @@ const collaborators = [
     link: "",
   },
   {
-    name: "Dr. Katie Stamatakis",
-    department: "Epidemiology/Public Health",
+    name: "Madeline Stenersen",
+    department: "Psychology",
     institution: "Saint Louis University",
     link: "",
   },
   {
-    name: "Madeline Stenersen",
-    department: "Psychology",
+    name: "Dr. Jazmon Carroll",
+    department: "SSM Health Physical Therapy",
+    institution: "Saint Louis University",
+    link: "",
+  },
+  {
+    name: "Dr. Alex Baran",
+    department: "SSM Health Physical Therapy",
     institution: "Saint Louis University",
     link: "",
   },
