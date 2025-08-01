@@ -26,3 +26,37 @@
 body {
   font-family: "SoDoSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+/* Animated gradient text */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient-text {
+  background: linear-gradient(
+    90deg,
+    #9333ea,
+    #3b82f6,
+    #ec4899,
+    #9333ea,
+    #3b82f6
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Hover state for animated gradient */
+.animated-gradient-text:hover {
+  animation-duration: 1.5s;
+}

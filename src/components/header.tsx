@@ -10,9 +10,15 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "Research", href: "/research" },
   { name: "Team", href: "/team" },
-  { name: "News", href: "/news" },
   { name: "Publications", href: "/publications" },
   { name: "Donate", href: "/donate" },
+  {
+    name: "Pickleball Event",
+    href: "https://slutiplab.ticketspice.com/tiplab-dinkfest",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    special: true,
+  },
 ];
 
 interface HeaderProps {
@@ -26,7 +32,7 @@ export default function Header({ darkMode = false }: HeaderProps) {
   return (
     <header className="absolute inset-x-0 top-0 z-40">
       <nav className="flex items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-none">
           <Link href="/">
             <Image className="h-12 w-auto" src={logo} alt="" />
           </Link>
@@ -41,19 +47,25 @@ export default function Header({ darkMode = false }: HeaderProps) {
           </button>
         </div>
         <div
-          className={`hidden lg:flex lg:gap-x-12 lg:flex-1 lg:justify-center ${textColor}`}
+          className={`hidden lg:flex lg:flex-auto lg:justify-center lg:mx-8 ${textColor}`}
         >
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-sm font-semibold leading-6"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <div className="flex lg:gap-x-6 xl:gap-x-8 max-w-2xl">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                target={item.target}
+                rel={item.rel}
+                className={`text-sm font-semibold leading-6 text-center px-3 py-2 whitespace-nowrap ${
+                  item.special ? "animated-gradient-text" : ""
+                }`}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-none lg:justify-end">
           <Link
             href="/contact"
             className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -90,7 +102,11 @@ export default function Header({ darkMode = false }: HeaderProps) {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${textColor}`}
+                    target={item.target}
+                    rel={item.rel}
+                    className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${
+                      item.special ? "animated-gradient-text" : textColor
+                    }`}
                   >
                     {item.name}
                   </Link>
