@@ -2,6 +2,7 @@ import Header from "@/components/header";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import RightCircularShape from "@/components/shapes/right-circular-shape";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Donate() {
   return (
@@ -30,7 +31,7 @@ export default function Donate() {
             <p className="text-lg text-gray-600">
               Donate to the TIP Lab{" "}
               <Link
-                href="https://engage.slu.edu/register/giftform"
+                href="https://engage.slu.edu/register/fund?sys:gift:fund=d4510e5c-e8a4-33d8-0c2e-206a9f1ea0c6&sys:gift:notes=OEVT9999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-500 underline font-medium"
@@ -38,6 +39,13 @@ export default function Donate() {
                 here
               </Link>
             </p>
+            <p className="text-lg text-gray-600">Or scan the QR code below:</p>
+            <Image
+              src="/images/qr-code.jpg"
+              alt="QR Code"
+              width={200}
+              height={200}
+            />
           </div>
 
           <div className="bg-gray-100 rounded-lg p-6 mt-8">
