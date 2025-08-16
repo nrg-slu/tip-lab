@@ -69,9 +69,12 @@ export default function Donate() {
             </ol>
           </div>
 
-          <div className="mt-12 text-center">
+          <div className="mt-12 text-center space-y-2">
             <p className="text-xl font-semibold text-gray-900">
               Thank you for making a difference!
+            </p>
+            <p className="text-xs text-gray-900">
+              *All donations are tax deductible!
             </p>
           </div>
         </div>
