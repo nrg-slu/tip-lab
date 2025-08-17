@@ -48,27 +48,6 @@ export default function Donate() {
             />
           </div>
 
-          <div className="bg-gray-100 rounded-lg p-6 mt-8">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
-              Instructions:
-            </h2>
-            <ol className="list-decimal list-inside space-y-2 text-gray-600">
-              <li>
-                In the &quot;select an area of support&quot; dropdown on the SLU
-                gift donation page, select &quot;search for a specific
-                fund&quot;
-              </li>
-              <li>
-                Type &quot;Translational Injury Prevention Lab Support
-                Fund&quot;
-              </li>
-              <li>
-                Enter gift amount and complete the contact information and
-                payment details
-              </li>
-            </ol>
-          </div>
-
           <div className="mt-12 text-center space-y-2">
             <p className="text-xl font-semibold text-gray-900">
               Thank you for making a difference!
