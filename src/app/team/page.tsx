@@ -1,10 +1,15 @@
 import Header from "@/components/header";
 import Image from "next/image";
 import Link from "next/link";
+import AarushiHeadshot from "../../../public/images/headshots/aarushi.jpg";
+import DavieHeadshot from "../../../public/images/headshots/davie.jpg";
 import EvanHeadshot from "../../../public/images/headshots/evan.png";
 import HarperHeadshot from "../../../public/images/headshots/harper.png";
 import JackHeadshot from "../../../public/images/headshots/jack.png";
+import JaredHeadshot from "../../../public/images/headshots/jared.jpg";
 import JemmaHeadshot from "../../../public/images/headshots/jemma.png";
+import JosephHeadshot from "../../../public/images/headshots/joseph.jpg";
+import JustinHeadshot from "../../../public/images/headshots/justin.png";
 import LukeHeadshot from "../../../public/images/headshots/luke.png";
 import MalloryHeadshot from "../../../public/images/headshots/mallory.png";
 import MeenaHeadshot from "../../../public/images/headshots/meena.png";
@@ -15,7 +20,6 @@ import NoahHeadshot from "../../../public/images/headshots/noah.png";
 import OluHeadshot from "../../../public/images/headshots/olu.png";
 import ShreyaHeadshot from "../../../public/images/headshots/shreya.png";
 import TravisHeadshot from "../../../public/images/headshots/travis.png";
-import DavieHeadshot from "../../../public/images/headshots/davie.jpg";
 import Callahan from "../../../public/images/callahan.jpg";
 import Peak from "../../../public/images/peak.jpg";
 import { ArrowDownIcon } from "@heroicons/react/20/solid";
@@ -32,18 +36,70 @@ const people = [
     bio: "Dr. Owoeye's research focuses on the generation and implementation of knowledge that informs the prevention of sport- and exercise-related injuries and consequences in youth and young adults.",
   },
   {
+    name: "Davie Mulenga",
+    role: "2nd year PhD student",
+    imageUrl: DavieHeadshot,
+    link: "",
+    bio: "Hometown: Zambia\nFavorite Sport: Soccer\nResearch Interests: Sports epidemiology, cancer rehabilitation, implementation science\nFun Fact: A life in motion",
+  },
+  {
+    name: "Aarushi Parmar",
+    role: "Professional Year 3, Physical Therapy",
+    imageUrl: AarushiHeadshot,
+    link: "",
+    bio: "Hometown: Michigan\nFavorite Sports: Football (to watch), Basketball (to play)\nResearch Interests: Injury Prevention\nFun Fact: I love playing the piano and going on drives",
+  },
+  {
+    name: "Joseph Grese",
+    role: "Professional Year 3, Physical Therapy",
+    imageUrl: JosephHeadshot,
+    link: "",
+    bio: "Hometown: Indianapolis, Indiana\nFavorite Sports: Baseball (to watch), Swimming (to play)\nResearch Interests: Injury prevention and return to sport\nFun Fact: I am a big Cardinals fan",
+  },
+  {
+    name: "Mitchell Wayne",
+    role: "Professional Year 2, Physical Therapy",
+    imageUrl: MitchellHeadshot,
+    link: "",
+    bio: "Hometown: Lake Zurich, Illinois\nFavorite Sports: Football and Baseball (to watch), Baseball, Pickleball, and Strength Training (to play)\nResearch Interests: Pickleball Injury Prevention and Physical Therapy Rehabilitation Outcomes\nFun Fact: I have traveled to 4 continents",
+  },
+  {
+    name: "Jared Thornberry",
+    role: "Professional Year 1, Physical Therapy",
+    imageUrl: JaredHeadshot,
+    link: "",
+    bio: "Hometown: Saint Louis, Missouri\nFavorite Sport: Soccer\nResearch Interests: Musculoskeletal injury prevention, concussion prevention\nFun Fact: I have studied at all three Saint Louis University campuses (SLUH High, SLU-Saint Louis, SLU-Madrid)",
+  },
+  {
+    name: "Justin Samanta",
+    role: "M2, Medicine",
+    imageUrl: JustinHeadshot,
+    link: "",
+    bio: "Hometown: Cape Girardeau, MO\nFavorite Sport: Basketball\nResearch Interests: Rehabilitation, Neuroscience, Injury Prevention\nFun Fact: I have a private pilot license",
+  },
+  {
+    name: "Harper Madges",
+    role: "Junior, Physical Therapy",
+    imageUrl: HarperHeadshot,
+    link: "",
+    bio: "Hometown: Kettering, Ohio\nFavorite Sport: Volleyball\nResearch Interests: Injury prevention, food allergies & asthma, art/music therapy\nFun Fact: I haven't ever broken a bone but I've had way too many concussions!",
+  },
+  {
+    name: "Evan Lennox",
+    role: "Junior, Exercise Science",
+    imageUrl: EvanHeadshot,
+    link: "",
+    bio: "Hometown: Carbondale, IL\nInvolvement: Club soccer, Movement Exchange, Labre\nFavorite Sports: Soccer, Tennis, Basketball\nResearch Interests: Injury prevention, Optimization of performance with implementation of proper injury prevention protocols",
+  },
+];
+
+const alumni = [
+  {
     name: "Nick Kolesky",
     role: "4th year PhD student",
     imageUrl: NickHeadshot,
     link: "",
     bio: "Hometown: Anchorage, AK\nInvolvement: Public health research\nFavorite sports: soccer, cross country\nResearch Interests: socioeconomic factors underlying obesity, injury prevention",
-  },
-  {
-    name: "Davie Mulenga",
-    role: "2nd year PhD student",
-    imageUrl: DavieHeadshot,
-    link: "",
-    bio: "Hometown: Zambia (Lusaka)\nInvolvement: Public Health Research\nFavorite Sport: Soccer\nResearch interest: Sports epidemiology , cancer rehabilitation and implementation research focusing on prevention, Rehabilitation and cancer survivorship",
   },
   {
     name: "Jack Hageman",
@@ -81,36 +137,12 @@ const people = [
     bio: "Hometown: Springfield, MO\nInvolvement: SOM Student Council, Military Medicine Interest Group Lead, Let's PLAY Service Group Lead\nFavorite sports: football, cross country and track and field\nResearch Interests: Sports injuries, distance runners' injury risks, outcomes, success/rates",
   },
   {
-    name: "Mitchell Wayne",
-    role: "Professional Year 1, Physical Therapy",
-    imageUrl: MitchellHeadshot,
-    link: "",
-    bio: "Hometown: Lake Zurich, IL\nInvolvement: PT Class Rep, Order of Omega\nFavorite Sports: Football, baseball, and basketball. Enjoy weight-lifting and running for fun\nResearch Interests: Optimization of human performance with injury risk, use of neurotechnology (brain-computer interface) in rehab",
-  },
-  {
-    name: "Evan Lennox",
-    role: "Junior, Exercise Science",
-    imageUrl: EvanHeadshot,
-    link: "",
-    bio: "Hometown: Carbondale, IL\nInvolvement: Club soccer, Movement Exchange, Labre\nFavorite Sports: Soccer, Tennis, Basketball\nResearch Interests: Injury prevention, Optimization of performance with implementation of proper injury prevention protocols",
-  },
-  {
-    name: "Harper Madges",
-    role: "Sophomore, Physical Therapy",
-    imageUrl: HarperHeadshot,
-    link: "",
-    bio: "Hometown: Dayton, Ohio\nInvolvement: Micah Program, Housing & Residence Life, PT Class Rep, PT Student Ambassador, PTSA VP of Mental Health, Wellness & Inclusivity\nFavorite Sports: Volleyball and Track and Field (Shot Put, Hammer & Discus)\nResearch Interests: Injury Prevention, Music/Art Therapy, and Food Allergies & Asthma",
-  },
-  {
     name: "Shreya Patel",
     role: "Senior, Neuroscience, Health Information Management",
     imageUrl: ShreyaHeadshot,
     link: "",
     bio: "Hometown: Carbondale, IL\nInvolvement: Nu Rho Psi Public Relations Chair, Alpha Epsilon Delta E-board, NIB Lab Member, and Intro Neuro TA\nFavorite Sports: Playing tennis and pickleball\nResearch Interests: Parkinson's disease and rehab sciences/tech",
   },
-];
-
-const alumni = [
   {
     name: "Meena Chetty",
     role: "Alumni",

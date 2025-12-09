@@ -12,13 +12,6 @@ const navigation = [
   { name: "Team", href: "/team" },
   { name: "Publications", href: "/publications" },
   { name: "Donate", href: "/donate" },
-  {
-    name: "Pickleball Event",
-    href: "https://slutiplab.ticketspice.com/tiplab-dinkfest",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    special: true,
-  },
 ];
 
 interface HeaderProps {
@@ -54,11 +47,7 @@ export default function Header({ darkMode = false }: HeaderProps) {
               <Link
                 key={item.name}
                 href={item.href}
-                target={item.target}
-                rel={item.rel}
-                className={`text-sm font-semibold leading-6 text-center px-3 py-2 whitespace-nowrap ${
-                  item.special ? "animated-gradient-text" : ""
-                }`}
+                className={`text-sm font-semibold leading-6 text-center px-3 py-2 whitespace-nowrap`}
               >
                 {item.name}
               </Link>
@@ -102,10 +91,8 @@ export default function Header({ darkMode = false }: HeaderProps) {
                   <Link
                     key={item.name}
                     href={item.href}
-                    target={item.target}
-                    rel={item.rel}
                     className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 ${
-                      item.special ? "animated-gradient-text" : textColor
+                      textColor
                     }`}
                   >
                     {item.name}

@@ -10,7 +10,42 @@ const publications = [
     publications: [
       {
         description:
-          "Owoeye, Oluwatoyosi B.A. PhD, MS, PT; Black, Amanda M. PhD, ATC; Brownson, Ross C. PhD. Using Dissemination and Implementation Science to Optimize Knowledge Translation in Sports Medicine and Related Fields: A Focus on Hybrid Research Approaches",
+          "Patterson BE, McKay C, Critchley ML, Lutz D, Cowan SM, Kolesky N, White V, Ezzat AM, Ross AG, Adams WM, Ageberg E, Ardern CL, Badenhorst M, Coventry M, Dubé MO, Emmonds S, Gracias LJ, Hayden KA, Lindblom H, Møller M, Moseid CH, Harrington (Quinn) N, Sugimoto D, Verhagen E, Yung KK, Zondi PC, Emery CA, Crossley KM, Owoeye OBA. Dissemination and implementation of injury prevention interventions. A scoping review for the Female, woman and girl Athlete Injury pRevention (FAIR) consensus. British Journal of Sports Medicine.",
+        link: "https://bjsm.bmj.com/content/early/2025/11/18/bjsports-2025-109904",
+      },
+      {
+        description:
+          "Whittaker JL, Räisänen AM, Martin C, Galarneau JM, Martin M, Losciale JM, Bullock GS, Bizzini M, Bourne MN, Dijkstra HP, Girdwood M, Hayden KA, Hägglund M, McLeod S, Mkumbuzi NS, Mosler AB, Murphy MC, Myklebust G, Møller M, Ocarino JM, Owoeye OBA, Palmer D, Pasanen K, Rio EK, Thorborg K, van Middelkoop M, Verhagen E, Warden SJ, Whalan M, Crossley KM, Emery CA. Modifiable risk factors for lower-extremity injury: a systematic review and meta-analysis for the Female, Woman and Girl Athlete Injury Prevention (FAIR) consensus. Br J Sports Med.",
+        link: "https://bjsm.bmj.com/content/early/2025/07/10/bjsports-2025-109910",
+      },
+      {
+        description:
+          "Keriven H, Sánchez-Sierra A, de-la-plaza-San-Frutos M, García-Pérez-de-Sevilla G, Clemente-Suarez V, Garcia-Laredo E, Saenz-Bravo M, Owoeye OBA, Miñambres-Martín D and Domínguez-Balmaseda D. Psychological wellbeing of student-athletes: a comparative study between European and American athletes. Front. Psychol.",
+        link: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1604783/full",
+      },
+      {
+        description:
+          "Owoeye OBA, Grese J, Stenersen M, Yemm T, Sebelski C and Sniffen K. The more you play, the better you feel: a dose–response analysis of pickleball and mental wellbeing in U.S. adults. Front. Psychol.",
+        link: "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1676695/full",
+      },
+      {
+        description:
+          "Owoeye OBA, Yemm T, Blechle R, Wayne M, Kennedy D, Mourad W, Stamatakis K, Howell T. Understanding Injury Patterns and Predictors in Pickleball Players: A Nationwide Study of 1,758 Participants. Sports Medicine - Open.",
+        link: "https://sportsmedicine-open.springeropen.com/articles/10.1186/s40798-025-00900-2",
+      },
+      {
+        description:
+          "McKay CD, Owoeye OBA, Patterson BE, Ardern CL, Møller M, Crossley KM, Emery CA. Implementing recommendations from the FAIR consensus – where do we start? British Journal of Sports Medicine.",
+        link: "https://bjsm.bmj.com/content/early/2025/11/06/bjsports-2025-111067",
+      },
+      {
+        description:
+          "Patterson BE, Adom-Aboagye NAA, Constantini N, Okoth C, Tsukahara Y, van Rensburg DCJ, Owoeye OBA, Gracias L, Haberfield M, Whittaker JL, Dijkstra P, McHugh TL, Emery CA, Crossley K. Advancing global equity, diversity and inclusion in sport and exercise medicine consensus and research: deliberate, thoughtful steps from the FAIR consensus. British Journal of Sports Medicine.",
+        link: "https://bjsm.bmj.com/content/early/2025/11/11/bjsports-2025-111063",
+      },
+      {
+        description:
+          "Owoeye, Oluwatoyosi B.A. PhD, MS, PT; Black, Amanda M. PhD, ATC; Brownson, Ross C. PhD. Using Dissemination and Implementation Science to Optimize Knowledge Translation in Sports Medicine and Related Fields: A Focus on Hybrid Research Approaches.",
         link: "https://journals.lww.com/cjsportsmed/fulltext/9900/using_dissemination_and_implementation_science_to.300.aspx",
       },
       {
