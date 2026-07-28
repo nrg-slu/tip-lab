@@ -11,7 +11,8 @@ const navigation = [
   { name: "Research", href: "/research" },
   { name: "Team", href: "/team" },
   { name: "Publications", href: "/publications" },
-  { name: "Donate", href: "/donate" },
+  { name: "Community Testing", href: "/community-testing" },
+  { name: "Support Us", href: "/donate" },
 ];
 
 interface HeaderProps {

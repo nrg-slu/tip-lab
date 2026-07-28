@@ -6,8 +6,38 @@ import Link from "next/link";
 
 const publications = [
   {
+    year: "2026",
+    publications: [
+      {
+        description:
+          "Bellm JV, Lindish J, Mourad W, Owoeye OBA. Understanding Upper Extremity Injury Prevalence and Risk in Pickleball Players: A Nationwide Survey. JOSPT Open, ahead of print DOI: 10.2519/josptopen.2026.0171.",
+        link: "https://doi.org/10.2519/josptopen.2026.0171",
+      },
+      {
+        description:
+          "Lutz D, Van Den Berg C, Neill MG, Galarneau JM, Owoeye OBA, Pasanen K, Schneider KJ, Emery CA. A Video Analysis Study Examining Neuromuscular Training Warm-Up Practices in Youth Soccer. Clin J Sport Med. 2026 Apr 8. doi: 10.1097/JSM.0000000000001423. Epub ahead of print. PMID: 41947291.",
+        link: "https://doi.org/10.1097/JSM.0000000000001423",
+      },
+      {
+        description:
+          "Nojoumi M, Jafari A, Kakhki AH, Esfehani AJ, Rafiei H, Kerksick C, Owoeye O, Rezvani R. Beetroot juice and vitamin C co-supplementation enhances anaerobic performance and reduces post-exercise glycemia in wrestlers: a randomized, double-blind, placebo-controlled crossover trial. Nutr Metab (Lond). 2026 Apr 17;23(1):67. doi: 10.1186/s12986-026-01103-6.",
+        link: "https://doi.org/10.1186/s12986-026-01103-6",
+      },
+      {
+        description:
+          "Meiling Tao, Bas Van Hooren, Siyu Dai,1 Xinxin Wang, Mingyue Yin, Kai Xu, Chenwen Zhu, Mengde Lyu, Yuou Song, Zhan Li, Xinyu Zeng,1 Yuming Zhong, Oluwatoyosi B. A. Owoeye, and Yongming Li. The Effect of Neuromuscular Exercise Interventions on Athletic Performance Across Different Levels: A Multilevel Meta-Analysis. International Journal of Sports Physiology and Performance. Ahead of Print: https://doi.org/10.1123/ijspp.2025-0584",
+        link: "https://doi.org/10.1123/ijspp.2025-0584",
+      },
+    ],
+  },
+  {
     year: "2025",
     publications: [
+       {
+        description:
+          "Owoeye OBA, Wayne M, Owoeye A, Blechle R, Yemm T, Mourad W. Are Pickleball Players Warming Up Effectively? A Nationwide Survey of 1,758 Players on Knowledge, Perceptions, Practices, and Preferences for Injury Prevention. Int. J. Racket Sports Sci 2025 7(2), 42-48.",
+        link: "https://revistaseug.ugr.es/index.php/IJRSS/article/view/34953",
+      },
       {
         description:
           "Patterson BE, McKay C, Critchley ML, Lutz D, Cowan SM, Kolesky N, White V, Ezzat AM, Ross AG, Adams WM, Ageberg E, Ardern CL, Badenhorst M, Coventry M, Dubé MO, Emmonds S, Gracias LJ, Hayden KA, Lindblom H, Møller M, Moseid CH, Harrington (Quinn) N, Sugimoto D, Verhagen E, Yung KK, Zondi PC, Emery CA, Crossley KM, Owoeye OBA. Dissemination and implementation of injury prevention interventions. A scoping review for the Female, woman and girl Athlete Injury pRevention (FAIR) consensus. British Journal of Sports Medicine.",
