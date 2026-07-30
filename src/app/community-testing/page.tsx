@@ -9,7 +9,7 @@ const services = [
     title:
       "Dual-Energy X-Ray Absorptiometry (DEXA) Total Body Composition Scan",
     description:
-      "Comprises fat mass, lean mass, bone mineral density, relative skeletal muscle index, resting metabolic rate, visceral adipose tissue, subcutaneous adipose tissue + printed reports and analytics",
+      "Comprises fat mass, lean mass, bone mineral density, relative skeletal muscle index, resting metabolic rate, CoreScan (visceral and subcutaneous adipose tissue) + printed reports/analytics, including segmental (body region) and trend analytics",
     rates: [
       { label: "SLU Individual Rate", price: "$60" },
       { label: "Non-SLU Individual Rate", price: "$75" },
