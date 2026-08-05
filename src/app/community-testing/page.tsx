@@ -12,18 +12,24 @@ const services = [
       "Comprises fat mass, lean mass, bone mineral density, relative skeletal muscle index, resting metabolic rate, CoreScan (visceral and subcutaneous adipose tissue) + printed reports/analytics, including segmental (body region) and trend analytics",
     rates: [
       { label: "SLU Individual Rate", price: "$60" },
+      { label: "SLU Group Rate (≥10 people)", price: "$50" },
       { label: "Non-SLU Individual Rate", price: "$75" },
       { label: "Non-SLU Group Rate (≥10 people)", price: "$60" },
+      { label: "Funded Research Rate (Local)", price: "$75" },
+      { label: "Funded Research Rate (Federal/International)", price: "$100" },
     ],
   },
   {
     title: "Lower Extremity Strength and Balance Testing",
     description:
-      "Comprises objective isometric dynamometry and Biodex Biosway metrics + reports and analytics",
+      "Comprises objective isometric dynamometry and Biodex Biosway metrics + reports and analytics (both limbs)",
     rates: [
       { label: "SLU Individual Rate", price: "$40" },
+      { label: "SLU Group Rate (≥10 people)", price: "$30" },
       { label: "Non-SLU Individual Rate", price: "$60" },
       { label: "Non-SLU Group Rate (≥10 people)", price: "$40" },
+      { label: "Funded Research Rate (Local)", price: "$65" },
+      { label: "Funded Research Rate (Federal/International)", price: "$80" },
     ],
   },
 ];
@@ -115,7 +121,8 @@ export default async function CommunityTesting() {
             discounted rates with valid ID, and group pricing applies to
             concurrent assessments; customized services may vary based on
             scope and requirements e.g., research collaboration, corporate
-            wellness initiatives.
+            wellness initiatives. For example, region specific scans and/or 
+            advanced measures e.g., TBS in the spine starts from $150.
           </p>
 
           <div className="mx-auto max-w-3xl mt-20 border-t border-gray-200 pt-16">
