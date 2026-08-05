@@ -28,7 +28,7 @@ const services = [
       { label: "SLU Group Rate (≥10 people)", price: "$30" },
       { label: "Non-SLU Individual Rate", price: "$60" },
       { label: "Non-SLU Group Rate (≥10 people)", price: "$40" },
-      { label: "Funded Research Rate (Local)", price: "$65" },
+      { label: "Funded Research Rate (Local)", price: "$60" },
       { label: "Funded Research Rate (Federal/International)", price: "$80" },
     ],
   },
