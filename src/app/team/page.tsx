@@ -22,7 +22,13 @@ import ShreyaHeadshot from "../../../public/images/headshots/shreya.png";
 import TravisHeadshot from "../../../public/images/headshots/travis.png";
 import Callahan from "../../../public/images/callahan.jpg";
 import Peak from "../../../public/images/peak.jpg";
-import { ArrowDownIcon } from "@heroicons/react/20/solid";
+import FairwayAutomotive from "../../../public/images/fairway-automotive.png";
+import PlayOnPickle from "../../../public/images/play-on-pickle.png";
+import SsmHealthOrthopedics from "../../../public/images/ssm-health-orthopedics.jpg";
+import {
+  ArrowDownIcon,
+  ArrowTopRightOnSquareIcon,
+} from "@heroicons/react/20/solid";
 import LeftCircularShape from "@/components/shapes/left-circular-shape";
 import TeamImage from "../../../public/images/team-image-2.jpg";
 import React from "react";
@@ -312,6 +318,21 @@ const partners = [
     link: "https://peaksportspine.com/locations/crestwood/?utm_source=GBP",
     image: Peak,
   },
+  {
+    name: "SSM Health Orthopedics - Sports Medicine",
+    link: "https://www.ssmhealth.com/services/orthopedics/sports-medicine",
+    image: SsmHealthOrthopedics,
+  },
+  {
+    name: "Fairway Automotive",
+    link: "https://www.fairwayautomotive.com/",
+    image: FairwayAutomotive,
+  },
+  {
+    name: "Play On Pickle",
+    link: "https://www.playonpickle.com/",
+    image: PlayOnPickle,
+  },
 ];
 export default function Team() {
   return (
@@ -434,13 +455,24 @@ export default function Team() {
           {partners.map((partner) => (
             <li key={partner.name} className="flex flex-col gap-6 xl:flex-row">
               <div className="flex-auto space-y-6">
-                <Image src={partner.image} alt="" width={100} height={100} />
-                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                  {partner.name}
-                </h3>
-                <Link href={partner.link} className="text-indigo-600">
-                  {partner.link}
+                <Link href={partner.link} className="flex h-16 items-center">
+                  <Image
+                    src={partner.image}
+                    alt={partner.name}
+                    width={200}
+                    height={100}
+                    className="h-full w-auto max-w-[200px] object-contain"
+                  />
                 </Link>
+                <h3 className="text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                  <Link
+                    href={partner.link}
+                    className="underline decoration-gray-300 underline-offset-4 hover:text-indigo-600 hover:decoration-indigo-600"
+                  >
+                    {partner.name}{" "}
+                    <ArrowTopRightOnSquareIcon className="inline h-4 w-4 align-text-top" />
+                  </Link>
+                </h3>
               </div>
             </li>
           ))}
