@@ -23,17 +23,6 @@ export default function Home() {
         <Header darkMode />
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div className="mx-auto max-w-2xl py-40 sm:py-48 lg:py-48">
-            <div className="mb-8 flex flex-wrap items-center justify-center gap-3 rounded-full bg-white/10 px-4 py-2 ring-1 ring-white">
-              <span className="text-sm font-semibold text-white sm:text-base">
-                Dink for a Difference — Sept 11, 2026
-              </span>
-              <Link
-                href="/donate#upcoming-events"
-                className="rounded-full bg-indigo-600 px-4 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                View Event <span aria-hidden="true">&rarr;</span>
-              </Link>
-            </div>
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
                 Translational Injury Prevention Lab

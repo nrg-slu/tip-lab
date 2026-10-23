@@ -10,6 +10,16 @@ const publications = [
     publications: [
       {
         description:
+          "Mulenga D, Tooth C, Edouard P, Bakare U, Forelli F, Owoeye OBA. Surveillance of Athletes' Health in Resource-Constrained African Sports Contexts: Why Context Matters and Time to Catch Up. Int J Sports Phys Ther. 2026 Oct 1;21(10):1057-1060. doi: 10.26603/001c.171307.",
+        link: "https://doi.org/10.26603/001c.171307",
+      },
+      {
+        description:
+          "Owoeye OBA, Hill M, Hageman J, Lennox ET, Parmar A, Wayne MM, Sniffen K. Exploring a systems-based, multifactorial framework for load tolerance and injury risk in women's soccer: A prospective study. J Sci Med Sport. 2026 doi: 10.1016/j.jsams.2026.09.008. Epub ahead of print.",
+        link: "https://doi.org/10.1016/j.jsams.2026.09.008",
+      },
+      {
+        description:
           "Bellm JV, Lindish J, Mourad W, Owoeye OBA. Understanding Upper Extremity Injury Prevalence and Risk in Pickleball Players: A Nationwide Survey. JOSPT Open, ahead of print DOI: 10.2519/josptopen.2026.0171.",
         link: "https://doi.org/10.2519/josptopen.2026.0171",
       },
@@ -25,7 +35,7 @@ const publications = [
       },
       {
         description:
-          "Meiling Tao, Bas Van Hooren, Siyu Dai,1 Xinxin Wang, Mingyue Yin, Kai Xu, Chenwen Zhu, Mengde Lyu, Yuou Song, Zhan Li, Xinyu Zeng,1 Yuming Zhong, Oluwatoyosi B. A. Owoeye, and Yongming Li. The Effect of Neuromuscular Exercise Interventions on Athletic Performance Across Different Levels: A Multilevel Meta-Analysis. International Journal of Sports Physiology and Performance. Ahead of Print: https://doi.org/10.1123/ijspp.2025-0584",
+          "Meiling Tao, Bas Van Hooren, Siyu Dai,1 Xinxin Wang, Mingyue Yin, Kai Xu, Chenwen Zhu, Mengde Lyu, Yuou Song, Zhan Li, Xinyu Zeng,1 Yuming Zhong, Owoeye OBA, and Yongming Li. The Effect of Neuromuscular Exercise Interventions on Athletic Performance Across Different Levels: A Multilevel Meta-Analysis. International Journal of Sports Physiology and Performance. Ahead of Print: https://doi.org/10.1123/ijspp.2025-0584",
         link: "https://doi.org/10.1123/ijspp.2025-0584",
       },
     ],

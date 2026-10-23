@@ -19,19 +19,6 @@ const services = [
       { label: "Funded Research Rate (Federal/International)", price: "$100" },
     ],
   },
-  {
-    title: "Lower Extremity Strength and Balance Testing",
-    description:
-      "Comprises objective isometric dynamometry and Biodex Biosway metrics + reports and analytics (both limbs)",
-    rates: [
-      { label: "SLU Individual Rate", price: "$40" },
-      { label: "SLU Group Rate (≥10 people)", price: "$30" },
-      { label: "Non-SLU Individual Rate", price: "$60" },
-      { label: "Non-SLU Group Rate (≥10 people)", price: "$40" },
-      { label: "Funded Research Rate (Local)", price: "$60" },
-      { label: "Funded Research Rate (Federal/International)", price: "$80" },
-    ],
-  },
 ];
 
 const workshops = [
@@ -95,7 +82,7 @@ export default async function CommunityTesting() {
 
           <div className="mx-auto max-w-2xl mt-10 text-center space-y-4">
             <p className="text-base text-gray-600">
-              Only cash or checks are accepted for payment.
+              Only checks (preferred) or cash are accepted for payment.
             </p>
             <p className="text-lg text-gray-600">
               Email Dr. Olu Owoeye at {scheduleEmail} to schedule an
